@@ -65,8 +65,8 @@ def get_remote_approved_users():
 
 
 original_data = ('{"users": [ '
-                 '{"name": "David Crouse", "user_name": "david.thomas.crouse@gmail.com", "password": "123456", "password_type": "set", "type": "student", "mac_address": "?????"}, '
-                 '{"name": "David Crouse", "user_name": "dcrouse@clarkson.edu", "password": "123456", "password_type": "set", "type": "enterpriselite", "mac_address": "?????"} ] }')
+                 '{"name": "David Crouse", "user_name": "david.thomas.crouse@gmail.com", "password": "123456", "password_type": "set", "type": "student", "mac_address": "?????", "email": "david.thomas.crouse@gmail.com"}, '
+                 '{"name": "David Crouse", "user_name": "dcrouse@clarkson.edu", "password": "123456", "password_type": "set", "type": "enterpriselite", "mac_address": "?????", "email": "dcrouse@clarkson.edu"} ] }')
 
 ########################################################################################################
 
