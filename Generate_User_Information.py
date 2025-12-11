@@ -7,6 +7,7 @@ import subprocess
 
 def run_git_commands():
     try:
+        print("bye")
         # Stage the file
         subprocess.run(['git', 'add', 'herrings.json'], check=True)
 
