@@ -10,7 +10,6 @@ import shutil
 
 def run_git_commands():
     try:
-        print('hi')
         # Stage the file
         subprocess.run(['git', 'add', 'herrings.json'], check=True)
 
