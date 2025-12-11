@@ -2,6 +2,9 @@ from cryptography.fernet import Fernet
 import json
 import requests
 import subprocess
+import shutil
+
+
 
 #############################################################################################
 
@@ -61,7 +64,12 @@ def get_remote_approved_users():
 ########################################################################################################
 
 
-original_data = '{"users": [ {"user_name": "david.thomas.crouse@gmail.com", "password": "123456", "type": "student"}, {"user_name": "dcrouse@clarkson.edu", "password": "123456", "type": "enterpriselite"} ] }'
+original_data = ('{"users": [ '
+                 '{"name": "David Crouse", "user_name": "david.thomas.crouse@gmail.com", "password": "123456", "password_type": "set", "type": "student", "mac_address": "?????"}, '
+                 '{"name": "David Crouse", "user_name": "dcrouse@clarkson.edu", "password": "123456", "password_type": "set", "type": "enterpriselite", "mac_address": "?????"} ] }')
+
+########################################################################################################
+
 
 encrypted_data_returned = encrypt_json_data(original_data)
 
@@ -71,6 +79,13 @@ with open("herrings.json", "w") as json_file:
     print("Completed")
 
 run_git_commands()
+
+# Source and destination paths
+source = 'herrings.json'
+destination = 'https://raw.githubusercontent.com/pjcrouse/OptusUI/refs/heads/dtc_12_09_2025/herrings.json'
+
+# Copy the file
+shutil.copy(source, destination)
 print("Successfully encrypted")
 
 approved_users = get_remote_approved_users()
