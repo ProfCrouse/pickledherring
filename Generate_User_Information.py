@@ -81,17 +81,8 @@ with open("herrings.json", "w") as json_file:
 
 run_git_commands()
 
-# Source and destination paths
-source = 'herrings.json'
-destination = 'https://raw.githubusercontent.com/pjcrouse/OptusUI/refs/heads/dtc_12_09_2025/herrings.json'
-
-# Copy the file
-shutil.copy(source, destination)
-print("Successfully encrypted")
-
 approved_users = get_remote_approved_users()
 print(approved_users)
-print(approved_users['users'][0 ]['user_name'])
 
 
-# original_data = '{"allowed": ["david.thomas.crouse@gmail.com", "dcrouse@clarkson.edu", "tester@gmail.com", "metaprof@yahoo.com", "thomas_cromwell"]}'
+
