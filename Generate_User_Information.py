@@ -14,8 +14,8 @@ def run_git_commands():
         # Stage the file
         subprocess.run(['git', 'add', 'herrings.json'], check=True)
 
-        # Pull latest changes (rebase)
-        subprocess.run(['git', 'pull', '--rebase', 'origin', 'main'], check=True)
+        # # Pull latest changes (rebase)
+        # subprocess.run(['git', 'pull', '--rebase', 'origin', 'main'], check=True)
 
         # Commit the changes
         subprocess.run(['git', 'commit', '-m', 'Updated email list in herrings.json'], check=True)
