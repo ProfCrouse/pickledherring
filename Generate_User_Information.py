@@ -11,6 +11,7 @@ import shutil
 def run_git_commands():
     try:
 
+
         subprocess.run(["git", "pull"])
 
         # Stage the file
