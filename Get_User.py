@@ -34,8 +34,8 @@ def get_remote_approved_users():
 
 
 
-approved_users = get_remote_approved_users()
-print(approved_users)
+# approved_users = get_remote_approved_users()
+# print(approved_users)
 
 
 
