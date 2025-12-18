@@ -82,8 +82,8 @@ with open("herrings.json", "w") as json_file:
 
 run_git_commands()
 
-# approved_users = get_remote_approved_users()
-# print(approved_users)
+approved_users = get_remote_approved_users()
+print(approved_users)
 
 
 
