@@ -82,7 +82,7 @@ with open("herrings.json", "w") as json_file:
     print("Completed")
 
 run_git_commands()
-
+subprocess.run(["git", "pull"])
 approved_users = get_remote_approved_users()
 print(approved_users)
 
