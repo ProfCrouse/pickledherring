@@ -67,8 +67,6 @@ def get_remote_approved_users():
 
 ########################################################################################################
 
-print('hi')
-
 original_data = ('{"users": [ '
                  '{"order": "10014", "name": "David Crouse", "user_name": "professor_crouse", "password": "123456", "password_type": "temporary", "SKU": "1", "price": "1.00", "mac_address": "?????", "email": "dcrouse@clarkson.edu"} ] }')
 
